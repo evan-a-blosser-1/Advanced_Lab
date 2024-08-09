@@ -35,7 +35,7 @@ $$
 
 For comparison, we found the accepted value is, $G = 6.67430e-11$ from https://pml.nist.gov/cuu/Constants/.
 
-## Conclusion 
+### Conclusion 
 
 For the four experimental runs, we carried out our closest value to the accepted $G$ value is, $G_o \approx 6.61758 \times 10^{-11} \pm 1.28143 \frac{m^3}{kg\cdot s}$, which was calculated from our first experimental run's first equilibrium position. However, this value also carries with it the second to greatest uncertainty behind data set 3's uncertainty of $0.8499 \%$. Thus, there is still some systematic error unaccounted for within the experiment. Especially when this is compared to the values from our second and fourth experimental run. We somehow found approximate values for the first and third runs, yet our second and fourth showed severe errors. This could have come from miscalculated lowering of the saddle which keeps the pendulum in place while not being used. 
 
@@ -52,3 +52,84 @@ With this taken into account we can see our measurement with the least uncertain
 
 The Two-slit experiment utilized both a laser and a light bulb as the source of photons. For the laser measurements, voltage readings were taken to measure the interference pattern of the photons after passing the double slit within the apparatus. For the bulb, a photomultiplier tube (PMT) was used along with an oscilloscope and a pulse counter/interval timer (PCIT) in order to count the individual photons passing through the apparatus into the PMT. The PCIT was set to a $10$ $second$ interval thus each initial reading of the counts was in $\frac{counts}{10 \textit{ sec.}}$ and then converted into $\frac{counts}{1 \textit{ sec.}}$. 
 
+### Best Fit Function
+
+For our model, we utilized the **Fraunhofer** model presented within the lab manual. This uses the assumption that the light will act as a plane wave from an infinitely far source. This assumption is for both before and after the light passes through the double-slit. The following is the **Fraunhofer** model equation: 
+
+\begin{align*}
+    I(0) = I_0(\cos{\beta})^2(\frac{\sin{\alpha}}{\alpha})^2 
+\end{align*}
+
+where:
+
+
+- $\alpha = \frac{\pi a}{\lambda}\sin{\theta}$  
+- $\beta = \frac{\pi d}{\lambda}\sin{\theta}$
+
+
+and the following are the given constants:
+- The slit-width: a = 0.085 mm
+- Center-to-separation: d = 0.353 mm
+- Laser wavelength:  $\lambda_{laser}$ = 0.670 $\pm$ 0.005 $\mu$ m
+- Bulb wavelength:  $\lambda_{bulb}$ = 0.541 to 0.551 $\mu$ m
+
+
+From this it can be assumed that the variable $\theta$ expresses the radiation pattern, yet we further this by finding the relation of:
+
+\begin{align*}
+    \theta = \arctan{\frac{x}{l}} + \phi
+\end{align*}
+
+where the position of the micrometer is $x$, the length of the chamber of travel is $l = 50$ $cm$, and $\phi$ is the phase shift parameter for the best fit.
+
+
+The model was modified for the single slits by setting the Center-to-seperation distance $d=0$, as there is only one slit, which in turn makes $\beta = 0$. Using this value for $\beta$ shows that we can disregard the $\cos$ term as $(\cos{0})^2 = 1$.
+
+### Conclusion
+
+As we examine the first graph from our laser data we can see the diffraction pattern from the double-slit data which is a clear sign of the wave-like nature of the photons being emitted from the laser source. This of course is caused by the interference of the waves coming from either of the two slits. The peaks of the graph represent the constructive parts where both waves have joined to significantly magnify the intensity of the light, and the destructive parts are shown as the dips of the graph where the waves have fully interfered with each other causing almost no light to be measured at their respective positions. We also see the non-interference pattern from our single slit data, which shows the single wave nature which is not being interfered with by any other wave.
+
+Next, as we examine the graph for the bulb we can see that the diffraction pattern also emerges for the single photon. As both the laser and bulb graphs are similar we can conclude the same wave-like nature for the bulb's photon emission as we had for the laser source. Where this becomes interesting is when we recognize that the bulb source is calibrated to emit single photons at a time. From this, we can now introduce the proven paradox which is the main goal of this experiment. This paradox is that we are witnessing a single photon particle, or quanta, traveling through our apparatus, and displaying wave-like behavior as it reaches the detector. Particle wave duality tells us that we can observe a photon as either a wave or as a particle, yet within this experiment, we see both the particle and wave behaviors occurring within the same time frame. Thus as we see the diffraction pattern emerge from the single photons traveling from the light source we can conclude that we have successfully proven the paradox.  
+
+
+## Lab 3: Muon Decay
+
+As cosmic rays bombard Earth, protons within these rays will collide with nuclei within the upper atmosphere. This will produce pions \& antipions which begin to decay into muons and antimuons plus either a neutrino or anti-neutrino. Thus, the muon is a sub-particle by-product of cosmic rays which hit our atmosphere. These muons will decay further into a positron or electron plus another $2$ neutrinos or anti-neutrinos. This process is illustrated below:
+
+\begin{align*}
+    \mu^+ \rightarrow e^+ \nu  \bar{\nu}\\
+    \mu^- \rightarrow e^- \bar{\nu}  \nu
+\end{align*}
+
+where:
+
+- $\mu^-$ designates the muon 
+
+- $\mu^+$ designates the antimoun
+
+- $e^+$ \& $e^-$ are the positron and electron respectively
+
+- $\nu$ is the neutrinos 
+
+- $\bar{\nu}$ is the antineutrino
+
+
+
+
+The scintillator is able to stop muons with a reduced total energy of approximately $160$ $MeV$. This energy is low enough that the moun is capable of stopping within the scintillator and releasing their remaining kinetic energy of order $50$ $MeV$ in the form of a photon. This photon is then sent to the photomultiplier tube which is capable of increasing the photon, or multiplying its energy, to allow for measurements. This creates 2 successive flashes one from arrival and one from decay. However, other sources such as beta and gamma rays or even muons with total energy greater than $160$ $MeV$ will cause unwanted sources of error which can be seen as uncorrelated events that will serve as our background. 
+
+### Conclusion
+
+The accepted value for muon lifetime is $2.19703 \pm 0.00004$ $\mu sec$, and from our experiment, we see a value of  $2.046\pm 0.020$ $\mu sec$. We can conclude that our value was within roughly $- 6.88697$ % of the accepted value. This is with the optimized bin size of $32$ \& the optimized start time of $ 0.354$ $\mu sec$.
+
+As our accepted value is for a vacuum, and our value comes from muons that travel within our atmosphere, we should expect our value to be lower than the accepted. Thus, our value is an excellent representation of muon decay time, and we have successfully calculated the average lifetime of muon decay.
+
+### Other Sources of Error & Why Our Value is Lower Then the Expected Value
+
+We know of many other sources of error such as gamma rays and beta rays from the background radiation of Earth, yet these should be filtered out by the discriminator when set properly. As our discriminator was already set up from the previous experimenters and verified that it was correct we took the assumption that this would not be a source of error. 
+
+Yet, many of the muons that enter the scintillator have a variety of different kinetic energies that cause a variety of decay times. This can come from the muon itself being interrupted by other nuclei in the atmosphere, slowing it down to below the ideal $160$ $MeV$. We also don't know at what angle these muons enter the scintillator at, if at an angle this could also have undesired effects on the kinetic energy, and thus it would emit a photon at a significantly lower energy and yield a lower reading. 
+
+We also did not factor in the difference between the muon and antimuon, as they are both leptons with identical masses yet the muon is a negatively charged particle while the antimuon is positively charged. These antimuons may have been picked up by the detector causing unwanted decay times.
+
+Overall, we know that the velocity of the muon can actually determine the energy release upon arrival in the scintillator and thus impact the overall decay time. As we did not find a method to distinguish between muons with enough velocity to release a photon with an energy of $50$ $MeV$ we can assume that these slower muons could have also decreased the overall lifetime calculations.  
