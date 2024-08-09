@@ -1,6 +1,8 @@
 # Advanced_Lab
 
-Open ended labratory experiments cunducted for introduciton into research. 
+Open-ended laboratory experiments were conducted for introduction into the world of research. 
+
+---
 
 ## Lab 1: Cavendish Experiment: Calcuating Newtons Gravitational Constant "Big G"
 
@@ -46,6 +48,8 @@ The uncertainty for the mass $m_1$ was found to be $\pm 10g$ as defined on page 
 
 With this taken into account we can see our measurement with the least uncertainty was from our fourth data set. This measurment of $G_o = 8.64524 \times 10^{-11} \pm 1.19537 \frac{m^3}{kg\cdot s}$ was roughly $29.5\%$ away from the accepted value for $G$, yet has the least uncertainty within it's mearuments. Overall, our results show that we did in fact get a measurement within $1\%$ of the accepted value. The uncertainty within the fit parameters shows that there is an error in processing the data to find the period and equilibrium positions. Also as the uncertainty was greater for the closest calculation of $G$ it can be concluded that this is not as accurate as it may appear.
 
+---
+---
 
 
 ## Lab 2: Two-Slit Single Photon at a Time
@@ -90,6 +94,9 @@ The model was modified for the single slits by setting the Center-to-seperation 
 As we examine the first graph from our laser data we can see the diffraction pattern from the double-slit data which is a clear sign of the wave-like nature of the photons being emitted from the laser source. This of course is caused by the interference of the waves coming from either of the two slits. The peaks of the graph represent the constructive parts where both waves have joined to significantly magnify the intensity of the light, and the destructive parts are shown as the dips of the graph where the waves have fully interfered with each other causing almost no light to be measured at their respective positions. We also see the non-interference pattern from our single slit data, which shows the single wave nature which is not being interfered with by any other wave.
 
 Next, as we examine the graph for the bulb we can see that the diffraction pattern also emerges for the single photon. As both the laser and bulb graphs are similar we can conclude the same wave-like nature for the bulb's photon emission as we had for the laser source. Where this becomes interesting is when we recognize that the bulb source is calibrated to emit single photons at a time. From this, we can now introduce the proven paradox which is the main goal of this experiment. This paradox is that we are witnessing a single photon particle, or quanta, traveling through our apparatus, and displaying wave-like behavior as it reaches the detector. Particle wave duality tells us that we can observe a photon as either a wave or as a particle, yet within this experiment, we see both the particle and wave behaviors occurring within the same time frame. Thus as we see the diffraction pattern emerge from the single photons traveling from the light source we can conclude that we have successfully proven the paradox.  
+
+---
+---
 
 
 ## Lab 3: Muon Decay
