@@ -56,9 +56,9 @@ The Two-slit experiment utilized both a laser and a light bulb as the source of 
 
 For our model, we utilized the **Fraunhofer** model presented within the lab manual. This uses the assumption that the light will act as a plane wave from an infinitely far source. This assumption is for both before and after the light passes through the double-slit. The following is the **Fraunhofer** model equation: 
 
-\begin{align*}
+$$
     I(0) = I_0(\cos{\beta})^2(\frac{\sin{\alpha}}{\alpha})^2 
-\end{align*}
+$$
 
 where:
 
